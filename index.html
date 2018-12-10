@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
-  <title>Drumboard</title>
+  <title>Keyboard Sounds</title>
   <meta name="description" content="Drumboard">
   <meta name="author" content="Ian Walston">
-
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-<h1>Drumboard</h1>
-<form>
-  <input type="text">
-</form>
-  <script src="script.js"></script> 
+  <h1>Keyboard Sounds</h1>
+  <span id="charPress">_</span>
+  <hr>
+  <div>
+    enter some characters
+  </div>
+  <form class = "userInput">
+    <input type="text" id="newCharSet" value="qwerty">
+  </form>
+  <br>
+  <!-- <button onclick="assignNewSounds()">Click me</button> -->
+ <div> or pick from premade charsets</div>
+</div>
+<button onclick="newCharSet(alpha)">Alphabet</button>
+<button onclick="newCharSet(numbers)">Numbers</button>
+<button onclick="newCharSet(space)">Space</button>
+<button onclick="newCharSet(specialCharacters)">Special Characters</button>
+<button onclick="newCharSet(allCharacters)">All Characters</button>
+<br>
+<br>
+<div>set a sound to those characters</div>
+<button onclick="assignUserInputtoSoundHash(paths.kick)">Kick</button>
+<button onclick="assignUserInputtoSoundHash(paths.snare)">Snare</button>
+<button onclick="assignUserInputtoSoundHash(paths.hat)">Hats</button>
+<button onclick="assignUserInputtoSoundHash(paths.bell)">Bell</button>
+<button onclick="assignUserInputtoSoundHash(paths.maraca1)">Maraca1</button>
+<button onclick="assignUserInputtoSoundHash(paths.maraca2)">Maraca2</button>
+<button onclick="assignUserInputtoSoundHash(paths.weird)">Weird</button>
+<button onclick="assignUserInputtoSoundHash(paths.scifi)">Sci-FI</button>
+<br>
+<br>
+<br>
+<br>
+<button onclick="addSoundProfiletoSoundHash()">Reset to Default Sound Profile</button>
+  <script src="script.js"></script>
 </body>
+
 </html>
