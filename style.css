@@ -2,3 +2,17 @@
     width: 80%;
     height: 20px;
 }
+
+.container{
+    margin: 0, 4px;
+    padding: 2px;
+}
+
+.col-md-3{
+    width:25%;
+    float:left
+}
+
+button{
+    width:100%
+}

@@ -13,41 +13,41 @@
 </head>
 
 <body>
-  <h1>Keyboard Sounds</h1>
-  <span id="charPress">_</span>
-  <hr>
-  <div>
-    enter some characters
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3" <h1>Keyboard Sounds</h1>
+        <span id="charPress">_</span>
+        <hr>
+        <div>
+          enter some characters
+        </div>
+        <form class="userInput">
+          <input type="text" id="userInput" value="qwerty">
+        </form>
+        <br>
+        <div> or pick from premade charsets</div>
+
+        <div class="row" id="charSetButtonsDiv">
+        </div>
+        <br>
+        <br>
+        <div>set a sound to those characters</div>
+        <div class="row" id="soundPathButtonsDiv">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button onclick="addSoundProfiletoSoundHash()">Reset to Default Sound Profile</button>
+      </div>
+      <div class="col-md-9">
+      </div>
+      <!-- end of outter row -->
+    </div>
+    <!-- end of container -->
   </div>
-  <form class = "userInput">
-    <input type="text" id="newCharSet" value="qwerty">
-  </form>
-  <br>
-  <!-- <button onclick="assignNewSounds()">Click me</button> -->
- <div> or pick from premade charsets</div>
-</div>
-<button onclick="newCharSet(alpha)">Alphabet</button>
-<button onclick="newCharSet(numbers)">Numbers</button>
-<button onclick="newCharSet(space)">Space</button>
-<button onclick="newCharSet(specialCharacters)">Special Characters</button>
-<button onclick="newCharSet(allCharacters)">All Characters</button>
-<br>
-<br>
-<div>set a sound to those characters</div>
-<button onclick="assignUserInputtoSoundHash(paths.kick)">Kick</button>
-<button onclick="assignUserInputtoSoundHash(paths.snare)">Snare</button>
-<button onclick="assignUserInputtoSoundHash(paths.hat)">Hats</button>
-<button onclick="assignUserInputtoSoundHash(paths.bell)">Bell</button>
-<button onclick="assignUserInputtoSoundHash(paths.maraca1)">Maraca1</button>
-<button onclick="assignUserInputtoSoundHash(paths.maraca2)">Maraca2</button>
-<button onclick="assignUserInputtoSoundHash(paths.weird)">Weird</button>
-<button onclick="assignUserInputtoSoundHash(paths.scifi)">Sci-FI</button>
-<br>
-<br>
-<br>
-<br>
-<button onclick="addSoundProfiletoSoundHash()">Reset to Default Sound Profile</button>
-  <script src="script.js"></script>
+  <script src="script.js">
+  </script>
 </body>
 
 </html>
