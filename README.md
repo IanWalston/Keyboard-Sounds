@@ -1,6 +1,6 @@
 # KeyboardSounds
 
-[KeyboardSounds](https://ianwalston.github.io/KeyboardSounds/)
+[KeyboardSounds](https://ianwalston.github.io/keyboardsounds/)
 
 This webpage is me studying user input events. 
 
